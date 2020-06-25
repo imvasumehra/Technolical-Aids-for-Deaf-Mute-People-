@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpeechActivity">
+
+    <RelativeLayout
+        android:id="@+id/dash"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:foregroundGravity="bottom"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Text to Speech"
+            android:fontFamily="@font/librebaskerville"
+            android:gravity="center"
+            android:textSize="24sp"/>
+
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/textEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="start"
+        android:hint="Enter text to speak..."
+        android:minHeight="100dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/speakBtn"
+        android:layout_below="@id/textEt"
+        android:drawableStart="@drawable/ic_speak"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/t2sbc"
+        android:backgroundTint="@color/t2sbc"
+        android:text="Speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_below="@id/textEt"
+        android:drawableStart="@drawable/ic_stop"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/t2sbc"
+        android:backgroundTint="@color/t2sbc"
+        android:text="Stop"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stopBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="I want help!"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp" />
+
+            <Button
+                android:id="@+id/buttonTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Call POLICE!"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_below="@+id/buttonOne"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"/>
+
+            <Button
+                android:id="@+id/buttonThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have hearing and speaking disability."
+                android:layout_marginTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_below="@+id/buttonTwo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"/>
+
+            <Button
+                android:id="@+id/buttonFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please help me with directions."
+                android:layout_marginTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_below="@+id/buttonThree"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"/>
+
+            <Button
+                android:id="@+id/buttonFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call AMBULANCE!"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_below="@+id/buttonFour"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

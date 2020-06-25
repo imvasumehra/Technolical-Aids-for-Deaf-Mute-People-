@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- All the colors used in the application -->
+<resources>
+    <color name="colorBasic">#00584C</color>
+    <color name="colorPrimary">#00584C</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+    <color name="gradient_start">#4c84ff</color>
+    <color name="gradient_end">#18a3fe</color>
+    <color name="tab_indicator">#c0c0c0</color>
+    <color name="intro_title">#000000</color>
+    <color name="intro_desc">#656565</color>
+
+
+
+    <color name="grey">#d3d3d3</color>
+    <color name="transparentWhite">#cccccc</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="colorTextPrimary">#986004</color>
+    <color name="colorTextSecondary">#543224</color>
+
+    <color name="t2sbc">#EF0059</color>
+</resources>

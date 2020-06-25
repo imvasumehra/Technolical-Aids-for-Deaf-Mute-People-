@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Zecharian Riposte</string>
+    <string name="skip_intro">SKIP INTRO</string>
+    <string name="next">Next</string>
+    <string name="title_text">Title Text</string>
+    <string name="text_description">Text Description</string>
+    <string name="speech_button">Speech Button</string>
+    <string name="speak_button">Speak Button</string>
+</resources>

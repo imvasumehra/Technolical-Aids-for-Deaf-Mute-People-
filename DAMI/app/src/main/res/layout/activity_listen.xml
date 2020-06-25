@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListenActivity">
+
+    <RelativeLayout
+        android:id="@+id/dash"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:foregroundGravity="bottom"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Speech to Text"
+            android:fontFamily="@font/librebaskerville"
+            android:gravity="center"
+            android:textSize="24sp"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash"
+        android:fontFamily="@font/cinzel"
+        android:layout_margin="30dp"
+        android:text="1. Place the device in proximity to audio source.\n\n2. Press the mic.\n\n3. The words will appear here."
+        android:textColor="#000"
+        android:minHeight="200dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/voiceBtn"
+        android:background="@null"
+        android:src="@drawable/ic_mic"
+        android:scaleType="fitCenter"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/textTv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+</RelativeLayout>
